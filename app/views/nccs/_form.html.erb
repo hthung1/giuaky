@@ -1,0 +1,37 @@
+<%= form_with(model: ncc) do |form| %>
+  <% if ncc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ncc.errors.count, "error") %> prohibited this ncc from being saved:</h2>
+
+      <ul>
+        <% ncc.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :macc %>
+    <%= form.text_field :macc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tenncc %>
+    <%= form.text_field :tenncc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diachi %>
+    <%= form.text_area :diachi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thongtin %>
+    <%= form.text_area :thongtin %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

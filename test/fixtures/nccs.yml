@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  macc: MyString
+  tenncc: MyString
+  diachi: MyText
+  thongtin: MyText
+
+two:
+  macc: MyString
+  tenncc: MyString
+  diachi: MyText
+  thongtin: MyText

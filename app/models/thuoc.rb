@@ -1,0 +1,2 @@
+class Thuoc < ApplicationRecord
+end

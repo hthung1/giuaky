@@ -1,0 +1,32 @@
+<%= form_with(model: sx) do |form| %>
+  <% if sx.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sx.errors.count, "error") %> prohibited this sx from being saved:</h2>
+
+      <ul>
+        <% sx.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :maSX %>
+    <%= form.text_field :maSX %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tenHangs %>
+    <%= form.text_field :tenHangs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quocGia %>
+    <%= form.text_field :quocGia %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

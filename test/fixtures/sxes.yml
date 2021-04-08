@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  maSX: MyString
+  tenHangs: MyString
+  quocGia: MyString
+
+two:
+  maSX: MyString
+  tenHangs: MyString
+  quocGia: MyString

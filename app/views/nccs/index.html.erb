@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nccs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Macc</th>
+      <th>Tenncc</th>
+      <th>Diachi</th>
+      <th>Thongtin</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nccs.each do |ncc| %>
+      <tr>
+        <td><%= ncc.macc %></td>
+        <td><%= ncc.tenncc %></td>
+        <td><%= ncc.diachi %></td>
+        <td><%= ncc.thongtin %></td>
+        <td><%= link_to 'Show', ncc %></td>
+        <td><%= link_to 'Edit', edit_ncc_path(ncc) %></td>
+        <td><%= link_to 'Destroy', ncc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ncc', new_ncc_path %>

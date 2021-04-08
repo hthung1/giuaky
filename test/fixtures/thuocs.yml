@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mathuoc: MyString
+  TenThuoc: MyString
+  MaHangSX: MyString
+  MaNCC: MyString
+  CongDung: MyString
+  MaLoai: MyString
+  GhiChu: MyText
+
+two:
+  mathuoc: MyString
+  TenThuoc: MyString
+  MaHangSX: MyString
+  MaNCC: MyString
+  CongDung: MyString
+  MaLoai: MyString
+  GhiChu: MyText

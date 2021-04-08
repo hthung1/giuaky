@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Thuocs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mathuoc</th>
+      <th>Tenthuoc</th>
+      <th>Mahangsx</th>
+      <th>Mancc</th>
+      <th>Congdung</th>
+      <th>Maloai</th>
+      <th>Ghichu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @thuocs.each do |thuoc| %>
+      <tr>
+        <td><%= thuoc.mathuoc %></td>
+        <td><%= thuoc.TenThuoc %></td>
+        <td><%= thuoc.MaHangSX %></td>
+        <td><%= thuoc.MaNCC %></td>
+        <td><%= thuoc.CongDung %></td>
+        <td><%= thuoc.MaLoai %></td>
+        <td><%= thuoc.GhiChu %></td>
+        <td><%= link_to 'Show', thuoc %></td>
+        <td><%= link_to 'Edit', edit_thuoc_path(thuoc) %></td>
+        <td><%= link_to 'Destroy', thuoc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thuoc', new_thuoc_path %>

@@ -1,0 +1,2 @@
+module ThuocsHelper
+end

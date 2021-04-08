@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Maloai:</strong>
+  <%= @loai_thuoc.maloai %>
+</p>
+
+<p>
+  <strong>Tenloai:</strong>
+  <%= @loai_thuoc.tenloai %>
+</p>
+
+<p>
+  <strong>Ghichu:</strong>
+  <%= @loai_thuoc.ghichu %>
+</p>
+
+<%= link_to 'Edit', edit_loai_thuoc_path(@loai_thuoc) %> |
+<%= link_to 'Back', loai_thuocs_path %>

@@ -1,0 +1,52 @@
+<%= form_with(model: thuoc) do |form| %>
+  <% if thuoc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(thuoc.errors.count, "error") %> prohibited this thuoc from being saved:</h2>
+
+      <ul>
+        <% thuoc.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :mathuoc %>
+    <%= form.text_field :mathuoc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :TenThuoc %>
+    <%= form.text_field :TenThuoc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MaHangSX %>
+    <%= form.text_field :MaHangSX %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MaNCC %>
+    <%= form.text_field :MaNCC %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CongDung %>
+    <%= form.text_field :CongDung %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MaLoai %>
+    <%= form.text_field :MaLoai %>
+  </div>
+
+  <div class="field">
+    <%= form.label :GhiChu %>
+    <%= form.text_area :GhiChu %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

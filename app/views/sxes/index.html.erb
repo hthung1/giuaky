@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sxes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Masx</th>
+      <th>Tenhangs</th>
+      <th>Quocgia</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sxes.each do |sx| %>
+      <tr>
+        <td><%= sx.maSX %></td>
+        <td><%= sx.tenHangs %></td>
+        <td><%= sx.quocGia %></td>
+        <td><%= link_to 'Show', sx %></td>
+        <td><%= link_to 'Edit', edit_sx_path(sx) %></td>
+        <td><%= link_to 'Destroy', sx, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sx', new_sx_path %>

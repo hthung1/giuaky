@@ -1,0 +1,2 @@
+module LoaiThuocsHelper
+end

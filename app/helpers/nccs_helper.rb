@@ -1,0 +1,2 @@
+module NccsHelper
+end
